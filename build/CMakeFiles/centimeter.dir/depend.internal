@@ -1609,16 +1609,19 @@ CMakeFiles/centimeter.dir/cmExample.c.obj
  D:/Pico Downloads/pico-sdk/src/common/pico_time/include/pico/time.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+ D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
  D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
  D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
  D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
  D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
  D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
