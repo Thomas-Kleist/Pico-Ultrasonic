@@ -14,6 +14,6 @@ int main()
     setupUltrasonicPins(trigPin, echoPin);
     while (true) { 
         printf("\n %d cm", getCm(trigPin, echoPin)); 
-        sleep_us(10000);
+        sleep_ms(100);
     }
 }

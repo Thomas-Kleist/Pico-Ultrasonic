@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../ultrasonic/ultrasonic.h
-
 D:/Pico Downloads/pico-sdk/src/boards/include/boards/pico.h
 
 D:/Pico Downloads/pico-sdk/src/common/pico_base/include/pico.h
@@ -76,8 +74,6 @@ D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/hardware/re
 
 D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
 
-D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
-
 D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
 
 D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
@@ -85,14 +81,6 @@ D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
 D:/Pico Downloads/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
-
-D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
-hardware/address_mapped.h
-D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/platform_defs.h
-D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/platform_defs.h
-hardware/regs/clocks.h
-D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/clocks.h
 
 D:/Pico Downloads/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 hardware/address_mapped.h
@@ -138,12 +126,6 @@ D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_base/include/hardware/pico.h
 hardware/regs/addressmap.h
 D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_base/include/hardware/hardware/regs/addressmap.h
 
-D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
-pico.h
-D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/pico.h
-hardware/structs/clocks.h
-D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/hardware/structs/clocks.h
-
 D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
 pico.h
 D:/Pico Downloads/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/pico.h
@@ -180,17 +162,15 @@ D:/Pico Downloads/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.
 pico/stdio.h
 D:/Pico Downloads/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/pico/stdio.h
 
-D:/Pico-Ultrasonic/cmExample.c
+D:/Pico-Ultrasonic/ultrasonic/ultrasonic.c
 pico/stdlib.h
-D:/Pico-Ultrasonic/pico/stdlib.h
+D:/Pico-Ultrasonic/ultrasonic/pico/stdlib.h
 stdio.h
 -
-ultrasonic.h
-D:/Pico-Ultrasonic/ultrasonic.h
-hardware/uart.h
-D:/Pico-Ultrasonic/hardware/uart.h
-hardware/clocks.h
-D:/Pico-Ultrasonic/hardware/clocks.h
+hardware/gpio.h
+D:/Pico-Ultrasonic/ultrasonic/hardware/gpio.h
+hardware/timer.h
+D:/Pico-Ultrasonic/ultrasonic/hardware/timer.h
 
 generated/pico_base/pico/config_autogen.h
 D:/Pico Downloads/pico-sdk/src/boards/include/boards/pico.h
