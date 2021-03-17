@@ -56,23 +56,47 @@ CMAKE_BINARY_DIR = D:\Pico-Ultrasonic\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\centimeter.dir\all
-all: CMakeFiles\ELF2UF2Build.dir\all
 all: pico-sdk\all
+all: ultrasonic\all
+all: Examples\all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pico-sdk\preinstall
+preinstall: ultrasonic\preinstall
+preinstall: Examples\preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles\centimeter.dir\clean
-clean: CMakeFiles\ELF2UF2Build.dir\clean
 clean: pico-sdk\clean
+clean: ultrasonic\clean
+clean: Examples\clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Examples
+
+# Recursive "all" directory target.
+Examples\all: Examples\CMakeFiles\centimeter.dir\all
+Examples\all: Examples\CMakeFiles\ELF2UF2Build.dir\all
+Examples\all: Examples\CMakeFiles\objectExample.dir\all
+
+.PHONY : Examples\all
+
+# Recursive "preinstall" directory target.
+Examples\preinstall:
+
+.PHONY : Examples\preinstall
+
+# Recursive "clean" directory target.
+Examples\clean: Examples\CMakeFiles\centimeter.dir\clean
+Examples\clean: Examples\CMakeFiles\ELF2UF2Build.dir\clean
+Examples\clean: Examples\CMakeFiles\objectExample.dir\clean
+
+.PHONY : Examples\clean
 
 #=============================================================================
 # Directory level rules for directory pico-sdk
@@ -1442,59 +1466,24 @@ pico-sdk\tools\clean:
 .PHONY : pico-sdk\tools\clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/centimeter.dir
+# Directory level rules for directory ultrasonic
 
-# All Build rule for target.
-CMakeFiles\centimeter.dir\all: CMakeFiles\ELF2UF2Build.dir\all
-CMakeFiles\centimeter.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\centimeter.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\centimeter.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\centimeter.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\centimeter.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78 "Built target centimeter"
-.PHONY : CMakeFiles\centimeter.dir\all
+# Recursive "all" directory target.
+ultrasonic\all: ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\all
+ultrasonic\all: ultrasonic\CMakeFiles\pico_ultrasonic.dir\all
 
-# Build rule for subdir invocation for target.
-CMakeFiles\centimeter.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 77
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\centimeter.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
-.PHONY : CMakeFiles\centimeter.dir\rule
+.PHONY : ultrasonic\all
 
-# Convenience name for target.
-centimeter: CMakeFiles\centimeter.dir\rule
+# Recursive "preinstall" directory target.
+ultrasonic\preinstall:
 
-.PHONY : centimeter
+.PHONY : ultrasonic\preinstall
 
-# clean rule for target.
-CMakeFiles\centimeter.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\centimeter.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\centimeter.dir\clean
-.PHONY : CMakeFiles\centimeter.dir\clean
+# Recursive "clean" directory target.
+ultrasonic\clean: ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\clean
+ultrasonic\clean: ultrasonic\CMakeFiles\pico_ultrasonic.dir\clean
 
-#=============================================================================
-# Target rules for target CMakeFiles/ELF2UF2Build.dir
-
-# All Build rule for target.
-CMakeFiles\ELF2UF2Build.dir\all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ELF2UF2Build.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ELF2UF2Build.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ELF2UF2Build"
-.PHONY : CMakeFiles\ELF2UF2Build.dir\all
-
-# Build rule for subdir invocation for target.
-CMakeFiles\ELF2UF2Build.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\ELF2UF2Build.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
-.PHONY : CMakeFiles\ELF2UF2Build.dir\rule
-
-# Convenience name for target.
-ELF2UF2Build: CMakeFiles\ELF2UF2Build.dir\rule
-
-.PHONY : ELF2UF2Build
-
-# clean rule for target.
-CMakeFiles\ELF2UF2Build.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ELF2UF2Build.dir\clean
-.PHONY : CMakeFiles\ELF2UF2Build.dir\clean
+.PHONY : ultrasonic\clean
 
 #=============================================================================
 # Target rules for target pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir
@@ -1503,12 +1492,12 @@ CMakeFiles\ELF2UF2Build.dir\clean:
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=9,10 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=4 "Built target bs2_default"
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\rule
@@ -1530,12 +1519,12 @@ pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\clean:
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=11 "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num= "Built target bs2_default_bin"
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\rule
@@ -1557,12 +1546,12 @@ pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\clean:
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=12,13 "Built target bs2_default_padded_checksummed_asm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=5 "Built target bs2_default_padded_checksummed_asm"
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
 
 # Build rule for subdir invocation for target.
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\rule
@@ -1576,6 +1565,145 @@ bs2_default_padded_checksummed_asm: pico-sdk\src\rp2_common\boot_stage2\CMakeFil
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\clean:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\clean
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\clean
+
+#=============================================================================
+# Target rules for target ultrasonic/CMakeFiles/pico_ultrasonic_object.dir
+
+# All Build rule for target.
+ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
+	$(MAKE) $(MAKESILENT) -f ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\build.make /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\depend
+	$(MAKE) $(MAKESILENT) -f ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\build.make /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target pico_ultrasonic_object"
+.PHONY : ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\all
+
+# Build rule for subdir invocation for target.
+ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 23
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
+.PHONY : ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\rule
+
+# Convenience name for target.
+pico_ultrasonic_object: ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\rule
+
+.PHONY : pico_ultrasonic_object
+
+# clean rule for target.
+ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\clean:
+	$(MAKE) $(MAKESILENT) -f ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\build.make /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\clean
+.PHONY : ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\clean
+
+#=============================================================================
+# Target rules for target ultrasonic/CMakeFiles/pico_ultrasonic.dir
+
+# All Build rule for target.
+ultrasonic\CMakeFiles\pico_ultrasonic.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
+	$(MAKE) $(MAKESILENT) -f ultrasonic\CMakeFiles\pico_ultrasonic.dir\build.make /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic.dir\depend
+	$(MAKE) $(MAKESILENT) -f ultrasonic\CMakeFiles\pico_ultrasonic.dir\build.make /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target pico_ultrasonic"
+.PHONY : ultrasonic\CMakeFiles\pico_ultrasonic.dir\all
+
+# Build rule for subdir invocation for target.
+ultrasonic\CMakeFiles\pico_ultrasonic.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
+.PHONY : ultrasonic\CMakeFiles\pico_ultrasonic.dir\rule
+
+# Convenience name for target.
+pico_ultrasonic: ultrasonic\CMakeFiles\pico_ultrasonic.dir\rule
+
+.PHONY : pico_ultrasonic
+
+# clean rule for target.
+ultrasonic\CMakeFiles\pico_ultrasonic.dir\clean:
+	$(MAKE) $(MAKESILENT) -f ultrasonic\CMakeFiles\pico_ultrasonic.dir\build.make /nologo -$(MAKEFLAGS) ultrasonic\CMakeFiles\pico_ultrasonic.dir\clean
+.PHONY : ultrasonic\CMakeFiles\pico_ultrasonic.dir\clean
+
+#=============================================================================
+# Target rules for target Examples/CMakeFiles/centimeter.dir
+
+# All Build rule for target.
+Examples\CMakeFiles\centimeter.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
+Examples\CMakeFiles\centimeter.dir\all: ultrasonic\CMakeFiles\pico_ultrasonic.dir\all
+Examples\CMakeFiles\centimeter.dir\all: Examples\CMakeFiles\ELF2UF2Build.dir\all
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\centimeter.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\centimeter.dir\depend
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\centimeter.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\centimeter.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target centimeter"
+.PHONY : Examples\CMakeFiles\centimeter.dir\all
+
+# Build rule for subdir invocation for target.
+Examples\CMakeFiles\centimeter.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 52
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Examples\CMakeFiles\centimeter.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
+.PHONY : Examples\CMakeFiles\centimeter.dir\rule
+
+# Convenience name for target.
+centimeter: Examples\CMakeFiles\centimeter.dir\rule
+
+.PHONY : centimeter
+
+# clean rule for target.
+Examples\CMakeFiles\centimeter.dir\clean:
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\centimeter.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\centimeter.dir\clean
+.PHONY : Examples\CMakeFiles\centimeter.dir\clean
+
+#=============================================================================
+# Target rules for target Examples/CMakeFiles/ELF2UF2Build.dir
+
+# All Build rule for target.
+Examples\CMakeFiles\ELF2UF2Build.dir\all:
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\ELF2UF2Build.dir\depend
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\ELF2UF2Build.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=1,2,3 "Built target ELF2UF2Build"
+.PHONY : Examples\CMakeFiles\ELF2UF2Build.dir\all
+
+# Build rule for subdir invocation for target.
+Examples\CMakeFiles\ELF2UF2Build.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Examples\CMakeFiles\ELF2UF2Build.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
+.PHONY : Examples\CMakeFiles\ELF2UF2Build.dir\rule
+
+# Convenience name for target.
+ELF2UF2Build: Examples\CMakeFiles\ELF2UF2Build.dir\rule
+
+.PHONY : ELF2UF2Build
+
+# clean rule for target.
+Examples\CMakeFiles\ELF2UF2Build.dir\clean:
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\ELF2UF2Build.dir\clean
+.PHONY : Examples\CMakeFiles\ELF2UF2Build.dir\clean
+
+#=============================================================================
+# Target rules for target Examples/CMakeFiles/objectExample.dir
+
+# All Build rule for target.
+Examples\CMakeFiles\objectExample.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
+Examples\CMakeFiles\objectExample.dir\all: ultrasonic\CMakeFiles\pico_ultrasonic_object.dir\all
+Examples\CMakeFiles\objectExample.dir\all: Examples\CMakeFiles\ELF2UF2Build.dir\all
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\objectExample.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\objectExample.dir\depend
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\objectExample.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\objectExample.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Pico-Ultrasonic\build\CMakeFiles --progress-num=33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59 "Built target objectExample"
+.PHONY : Examples\CMakeFiles\objectExample.dir\all
+
+# Build rule for subdir invocation for target.
+Examples\CMakeFiles\objectExample.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 53
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Examples\CMakeFiles\objectExample.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Pico-Ultrasonic\build\CMakeFiles 0
+.PHONY : Examples\CMakeFiles\objectExample.dir\rule
+
+# Convenience name for target.
+objectExample: Examples\CMakeFiles\objectExample.dir\rule
+
+.PHONY : objectExample
+
+# clean rule for target.
+Examples\CMakeFiles\objectExample.dir\clean:
+	$(MAKE) $(MAKESILENT) -f Examples\CMakeFiles\objectExample.dir\build.make /nologo -$(MAKEFLAGS) Examples\CMakeFiles\objectExample.dir\clean
+.PHONY : Examples\CMakeFiles\objectExample.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

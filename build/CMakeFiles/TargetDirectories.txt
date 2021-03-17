@@ -1,7 +1,5 @@
-D:/Pico-Ultrasonic/build/CMakeFiles/centimeter.dir
-D:/Pico-Ultrasonic/build/CMakeFiles/rebuild_cache.dir
-D:/Pico-Ultrasonic/build/CMakeFiles/ELF2UF2Build.dir
 D:/Pico-Ultrasonic/build/CMakeFiles/edit_cache.dir
+D:/Pico-Ultrasonic/build/CMakeFiles/rebuild_cache.dir
 D:/Pico-Ultrasonic/build/pico-sdk/CMakeFiles/edit_cache.dir
 D:/Pico-Ultrasonic/build/pico-sdk/CMakeFiles/rebuild_cache.dir
 D:/Pico-Ultrasonic/build/pico-sdk/tools/CMakeFiles/edit_cache.dir
@@ -137,3 +135,12 @@ D:/Pico-Ultrasonic/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/edit_ca
 D:/Pico-Ultrasonic/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/rebuild_cache.dir
 D:/Pico-Ultrasonic/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 D:/Pico-Ultrasonic/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+D:/Pico-Ultrasonic/build/ultrasonic/CMakeFiles/pico_ultrasonic_object.dir
+D:/Pico-Ultrasonic/build/ultrasonic/CMakeFiles/pico_ultrasonic.dir
+D:/Pico-Ultrasonic/build/ultrasonic/CMakeFiles/edit_cache.dir
+D:/Pico-Ultrasonic/build/ultrasonic/CMakeFiles/rebuild_cache.dir
+D:/Pico-Ultrasonic/build/Examples/CMakeFiles/centimeter.dir
+D:/Pico-Ultrasonic/build/Examples/CMakeFiles/rebuild_cache.dir
+D:/Pico-Ultrasonic/build/Examples/CMakeFiles/ELF2UF2Build.dir
+D:/Pico-Ultrasonic/build/Examples/CMakeFiles/objectExample.dir
+D:/Pico-Ultrasonic/build/Examples/CMakeFiles/edit_cache.dir

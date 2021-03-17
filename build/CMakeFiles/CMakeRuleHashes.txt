@@ -1,7 +1,14 @@
 # Hashes of file build rules.
-be92709c9427850293315b35791a3078 CMakeFiles/ELF2UF2Build
 dfe9b5e6285899c7edec74ccb1ed9982 CMakeFiles/ELF2UF2Build-complete
-f61402a7948405c7cd33e0cb297c1824 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
+75ee6d87f5363d06c201010df1ab0817 Examples/CMakeFiles/ELF2UF2Build
+0f76b476ba80cb17a5d279974f7895ca Examples/CMakeFiles/ELF2UF2Build-complete
+f61402a7948405c7cd33e0cb297c1824 Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
+4f7e03593061e57427de9c0ac7d24784 Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+171bb4910d651a3100c62c212832623f Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+52356380152e73cc7c8f690231164c2c Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+93d0160831f9ee8034c13b33aa456a01 Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+78e9524c7efe41ba84d351bd3eac217c Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+3ae2ce80d3df13e8a65936b03bca6b7b Examples/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 afbb2105ed9b26d9680004956d095edc elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 e13746db8053db01bfc9daeb957edb5c elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 89b1f67a3f63fd417c843ae09c178d67 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
